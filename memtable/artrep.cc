@@ -87,7 +87,7 @@ public:
 
     // Advances to the previous position.
     // REQUIRES: Valid()
-    void Prev() override { assert(false); }
+    void Prev() override { iter_.Prev(); }
 
     // Advance to the first entry with a key >= target
     void Seek(const Slice& user_key, const char* memtable_key) override {
